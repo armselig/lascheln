@@ -27,6 +27,7 @@ function reset() {
   firstPlaceholder.classList.add('word--active');
   btnDie.disabled = false;
   sharer.classList.add('hidden');
+  document.getElementById('word0Prefix').textContent = 'eine';
 }
 
 function genderWords() {
