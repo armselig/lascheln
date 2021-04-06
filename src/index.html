@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lascheln – Würfeln mit Armin</title>
+    <link rel="stylesheet" href="assets/styles/index.css" />
+    <script src="assets/scripts/index.js" defer></script>
+  </head>
+  <body>
+    <header class="p-2 md:p-8">
+      <h1>Lascheln – Würfeln mit Armin</h1>
+      <p>
+        Schnapp Dir ein paar Würfel, und erstelle Deinen eigenen Pandemieplan
+        nach dem Laschet-Prinzip!
+      </p>
+    </header>
+    <main class="container mx-auto px-2 md:px-8">
+      <noscript
+        class="font-bold text-center text-2xl mt-8 p-4 bg-red-700 text-white"
+      >
+        Diese Seite funktioniert nur mit aktiviertem JavaScript. ☝️
+      </noscript>
+      <section class="mt-4">
+        <p class="leading-normal md:leading-normal text-4xl md:text-6xl">
+          Was wir jetzt brauchen ist <span id="word0Prefix">eine</span>
+          <span id="word0" class="word"></span
+          ><span id="word1" class="word"></span>
+          <span id="word2" class="word"></span>
+          <span id="word3" class="word"></span>-<span
+            id="word4"
+            class="word"
+          ></span>
+          bis <span id="word5" class="word"></span> zur
+          <span id="word6" class="word"></span>
+          <span id="word7" class="word"></span> der
+          <span id="word8" class="word"></span>.
+        </p>
+        <ul class="mt-8">
+          <li>
+            <button class="btn disabled:bg-black" id="btnDie">
+              Würfeln 🎲
+            </button>
+          </li>
+          <li><button class="btn" id="btnReset">Alles neu 🆕</button></li>
+        </ul>
+      </section>
+      <section class="mt-8">
+        <h2>Teile Deinen Pandemieplan auf:</h2>
+        <ul>
+          <li>Facebook</li>
+          <li>Twitter</li>
+        </ul>
+      </section>
+    </main>
+    <footer class="mt-4 p-2 md:p-8">
+      <ul class="divide-x">
+        <li><a href="https://hendrik.koeln/">armselig</a></li>
+        <li>
+          <a
+            href="https://github.com/armselig/lascheln"
+            title="Quellcode auf GitHub ansehen"
+            >GitHub</a
+          >
+        </li>
+        <li>
+          <a
+            href="assets/images/wuerfeln-mit-armin.jpg"
+            title="Bild, das als Vorlage für diese Seite dient"
+            >Vorlage</a
+          >
+          (Quelle unbekannt)
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>

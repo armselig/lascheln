@@ -1,0 +1,53 @@
+[
+  ["ein", "zwei", "drei", "vier", "fünf", "sechs"],
+  ["tägige", "wöchige", "monatige", "fache", "malige", "hebige"],
+  [
+    "harte",
+    "softe",
+    "optionale",
+    "intransparente",
+    "alternativlose",
+    "unumkehrbare"
+  ],
+  ["Wellenbrecher", "Brücken", "Treppen", "Wende", "Impf", "Ehren"],
+  [
+    { "word": "Lockdown", "gender": "male" },
+    { "word": "Stopp", "gender": "male" },
+    { "word": "Maßnahme", "gender": "female" },
+    { "word": "Kampagne", "gender": "female" },
+    { "word": "Sprint", "gender": "male" },
+    { "word": "Matrix", "gender": "female" }
+  ],
+  [
+    "zum Sommer",
+    "auf Weiteres",
+    "zur Bundestagswahl",
+    "2030",
+    "nach den Abiturprüfungen",
+    "in die Puppen"
+  ],
+  [
+    "sofortigen",
+    "nachhaltigen",
+    "allmählichen",
+    "unausweichlichen",
+    "wirtschaftsschonenden",
+    "willkürlichen"
+  ],
+  [
+    "Senkung",
+    "Steigerung",
+    "Beendigung",
+    "Halbierung",
+    "Vernichtung",
+    "Beschönigung"
+  ],
+  [
+    "Infektionszahlen",
+    "privaten Treffen",
+    "Wirtschaftsleistung",
+    "Wahlprognosen",
+    "dritten Welle",
+    "Bundeskanzlerin"
+  ]
+]

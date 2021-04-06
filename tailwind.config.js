@@ -1,3 +1,4 @@
 module.exports = {
-  purge: ['./src/**/*.{html,css,scss,js,jsx,ts,tsx,vue}'],
+  // mode: 'jit',
+  purge: ['./src/**/*.{html,css,scss,js,jsx,ts,tsx,vue}', './dist/**/*.html'],
 };
