@@ -10,8 +10,8 @@
   </head>
   <body>
     <header class="p-2 md:p-8">
-      <h1>Lascheln – Würfeln mit Armin</h1>
-      <p>
+      <h1 class="uppercase font-medium">Lascheln – Würfeln mit Armin</h1>
+      <p class="italic font-thin">
         Schnapp Dir ein paar Würfel, und erstelle Deinen eigenen Pandemieplan
         nach dem Laschet-Prinzip!
       </p>
@@ -23,7 +23,10 @@
         Diese Seite funktioniert nur mit aktiviertem JavaScript. ☝️
       </noscript>
       <section class="mt-4">
-        <p class="leading-normal md:leading-normal text-4xl md:text-6xl">
+        <p
+          id="phrase"
+          class="leading-normal md:leading-normal text-4xl md:text-6xl"
+        >
           Was wir jetzt brauchen ist <span id="word0Prefix">eine</span>
           <span id="word0" class="word"></span
           ><span id="word1" class="word"></span>
@@ -40,13 +43,13 @@
         <ul class="mt-8">
           <li>
             <button class="btn disabled:bg-black" id="btnDie">
-              Würfeln 🎲
+              Wort erwürfeln&nbsp;🎲
             </button>
           </li>
-          <li><button class="btn" id="btnReset">Alles neu 🆕</button></li>
+          <li><button class="btn" id="btnReset">Alles neu&nbsp;🆕</button></li>
         </ul>
       </section>
-      <section class="mt-8">
+      <section id="sharer" class="mt-8 hidden">
         <h2>Teile Deinen Pandemieplan auf:</h2>
         <ul>
           <li>Facebook</li>
@@ -54,21 +57,25 @@
         </ul>
       </section>
     </main>
-    <footer class="mt-4 p-2 md:p-8">
-      <ul class="divide-x">
-        <li><a href="https://hendrik.koeln/">armselig</a></li>
+    <footer class="mt-8 p-2 md:p-8">
+      <ul class="footer-links divide-x divide-current font-thin">
+        <!-- <li>
+          <a href="https://hendrik.koeln/" title="Webseite von Hendrik Neumann"
+            >🧑‍🚀&nbsp;armselig</a
+          >
+        </li> -->
         <li>
           <a
             href="https://github.com/armselig/lascheln"
             title="Quellcode auf GitHub ansehen"
-            >GitHub</a
+            >💻 &nbsp;GitHub</a
           >
         </li>
         <li>
           <a
             href="assets/images/wuerfeln-mit-armin.jpg"
             title="Bild, das als Vorlage für diese Seite dient"
-            >Vorlage</a
+            >🖼️ &nbsp;Vorlage</a
           >
           (Quelle unbekannt)
         </li>
