@@ -90,23 +90,23 @@
           <span id="word8" class="word"></span>.
         </p>
         <ul class="mt-8">
-          <li>
+          <li class="inline-block">
             <button
-              class="btn bg-yellow-500 border-yellow-500 hover:border-yellow-600"
+              class="btn bg-yellow-500 border-yellow-500 hover:border-yellow-600 hover:bg-yellow-400"
               id="btnDie"
             >
               <span>Wort erwürfeln</span><span class="btn__ico">🎲</span>
             </button>
           </li>
-          <li>
-            <button class="btn" id="btnReset">
+          <li class="inline-block">
+            <button class="btn hover:border-yellow-600" id="btnReset">
               <span>Alles neu</span><span class="btn__ico">🆕</span>
             </button>
           </li>
         </ul>
       </section>
       <section id="sharer" class="mt-8 hidden">
-        <h2>Teile Deinen Pandemieplan auf:</h2>
+        <h2>Teile Deinen Pandemieplan mit Armin!</h2>
         <ul>
           <li>Facebook</li>
           <li>Twitter</li>
@@ -114,26 +114,28 @@
       </section>
     </main>
     <footer class="container mx-auto px-2 py-8 md:px-8">
-      <ul class="footer-links divide-x divide-current text-sm">
-        <li>
+      <ul
+        class="footer-links sm:divide-x sm:divide-current text-sm text-center sm:text-left"
+      >
+        <li class="sm:inline-block sm:pr-2 mb-2">
           <a href="https://hendrik.koeln/" title="Webseite von Hendrik Neumann"
-            >🧑‍🚀&nbsp; armselig</a
+            >🧑‍🚀&nbsp;armselig</a
           >
         </li>
-        <li>
+        <li class="sm:inline-block sm:px-2 mb-2">
           <a
             href="https://github.com/armselig/lascheln"
             title="Quellcode auf GitHub ansehen"
-            >💻 &nbsp; GitHub</a
+            >💻 &nbsp;GitHub</a
           >
         </li>
-        <li>
+        <li class="sm:inline-block sm:px-2 mb-2">
           <a
             href="assets/images/wuerfeln-mit-armin.jpg"
             title="Bild, das als Vorlage für diese Seite dient"
-            >🖼️ &nbsp; Vorlage</a
+            >🖼️ &nbsp;Vorlage</a
           >
-          (Quelle unbekannt)
+          (Quelle: Internet)
         </li>
       </ul>
     </footer>
