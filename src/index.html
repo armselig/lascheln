@@ -5,31 +5,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lascheln – Würfeln mit Armin</title>
+    <meta name="author" content="Hendrik Neumann (https://hendrik.koeln/)" />
+    <meta
+      name="description"
+      content="Erwürfel Deinen persönlichen Corona-Pandemieplan nach dem Armin-Laschet-Prinzip!"
+    />
+    <meta name="page-topic" content="Politik" />
+    <meta name="page-type" content="Private Homepage" />
+    <meta name="audience" content="Alle" />
+    <meta property="og:title" content="Lascheln – Würfeln mit Armin" />
+    <meta property="og:site_name" content="armselig Cologne" />
+    <meta property="og:url" content="https://lascheln.armselig.net/" />
+    <meta
+      property="og:description"
+      content="Erwürfel Deinen persönlichen Corona-Pandemieplan nach dem Armin-Laschet-Prinzip!"
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://live.staticflickr.com/7284/8737586259_fb8175f730_b.jpg"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:creator" content="@armselig" />
+    <meta property="twitter:url" content="https://lascheln.armselig.net/" />
+    <meta property="twitter:title" content="Lascheln – Würfeln mit Armin" />
+    <meta
+      property="twitter:description"
+      content="Erwürfel Deinen persönlichen Corona-Pandemieplan nach dem Armin-Laschet-Prinzip!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://live.staticflickr.com/7284/8737586259_fb8175f730_b.jpg"
+    />
+    <meta http-equiv="content-language" content="de" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://lascheln.armselig.net/" />
     <link rel="stylesheet" href="assets/styles/index.css" />
     <script src="assets/scripts/index.js" defer></script>
   </head>
   <body>
-    <header class="p-2 md:p-8">
-      <h1 class="uppercase font-medium">Lascheln – Würfeln mit Armin</h1>
-      <p class="italic font-thin">
-        Schnapp Dir ein paar Würfel, und erstelle Deinen eigenen Pandemieplan
-        nach dem Laschet-Prinzip!
-      </p>
+    <header
+      class="container mx-auto md:flex md:items-center px-2 py-4 md:px-8 text-center md:text-left"
+    >
+      <img
+        src="assets/images/armin-laschet-256.jpg"
+        alt="Armin Laschet"
+        class="border-4 border-black rounded-full w-20 mx-auto md:mr-8"
+      />
+      <div class="mt-4 md:mt-0">
+        <h1 class="uppercase font-medium">Lascheln – Würfeln mit Armin</h1>
+        <p class="italic">
+          Schnapp' Dir den Würfel, und erstelle Deinen eigenen Pandemieplan nach
+          dem Laschet-Prinzip!
+        </p>
+      </div>
     </header>
-    <main class="container mx-auto px-2 md:px-8">
+    <main class="container mx-auto my-10 px-2 md:px-8">
       <noscript
         class="font-bold text-center text-2xl mt-8 p-4 bg-red-700 text-white"
       >
         Diese Seite funktioniert nur mit aktiviertem JavaScript. ☝️
       </noscript>
       <section class="mt-4">
+        <h2 class="sr-only">Dein persönlicher Corona-Pandemieplan</h2>
         <p
           id="phrase"
           class="leading-normal md:leading-normal text-4xl md:text-6xl"
         >
           Was wir jetzt brauchen ist <span id="word0Prefix">eine</span>
-          <span id="word0" class="word"></span
-          ><span id="word1" class="word"></span>
+          <span id="word0" class="word"></span>&shy;<span
+            id="word1"
+            class="word"
+          ></span>
           <span id="word2" class="word"></span>
           <span id="word3" class="word"></span>-<span
             id="word4"
@@ -42,11 +89,18 @@
         </p>
         <ul class="mt-8">
           <li>
-            <button class="btn disabled:bg-black" id="btnDie">
-              Wort erwürfeln&nbsp;🎲
+            <button
+              class="btn bg-yellow-500 border-yellow-500 hover:border-yellow-600"
+              id="btnDie"
+            >
+              <span>Wort erwürfeln</span><span class="btn__ico">🎲</span>
             </button>
           </li>
-          <li><button class="btn" id="btnReset">Alles neu&nbsp;🆕</button></li>
+          <li>
+            <button class="btn" id="btnReset">
+              <span>Alles neu</span><span class="btn__ico">🆕</span>
+            </button>
+          </li>
         </ul>
       </section>
       <section id="sharer" class="mt-8 hidden">
@@ -57,25 +111,25 @@
         </ul>
       </section>
     </main>
-    <footer class="mt-8 p-2 md:p-8">
-      <ul class="footer-links divide-x divide-current font-thin">
-        <!-- <li>
+    <footer class="container mx-auto px-2 py-8 md:px-8">
+      <ul class="footer-links divide-x divide-current text-sm">
+        <li>
           <a href="https://hendrik.koeln/" title="Webseite von Hendrik Neumann"
-            >🧑‍🚀&nbsp;armselig</a
+            >🧑‍🚀&nbsp; armselig</a
           >
-        </li> -->
+        </li>
         <li>
           <a
             href="https://github.com/armselig/lascheln"
             title="Quellcode auf GitHub ansehen"
-            >💻 &nbsp;GitHub</a
+            >💻 &nbsp; GitHub</a
           >
         </li>
         <li>
           <a
             href="assets/images/wuerfeln-mit-armin.jpg"
             title="Bild, das als Vorlage für diese Seite dient"
-            >🖼️ &nbsp;Vorlage</a
+            >🖼️ &nbsp; Vorlage</a
           >
           (Quelle unbekannt)
         </li>
