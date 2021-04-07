@@ -4,10 +4,12 @@
   "description": "Pandemieplan nach dem Laschet-Prinzip erwürfeln",
   "private": true,
   "scripts": {
-    "build": "cross-env NODE_ENV=production parcel build src/index.html",
+    "build": "cross-env NODE_ENV=production parcel build src/index.html --no-source-maps",
     "clean:cache": "rimraf ./.parcel-cache",
     "clean:dist": "rimraf ./dist",
-    "prebuild": "run-p clean:*",
+    "lint:code": "eslint --ext js,ts,tsx src",
+    "lint:styles": "stylelint ./src/assets/styles/**/*.{css,scss}",
+    "prebuild": "npm-run-all --parallel clean:* --serial lint:*",
     "start": "cross-env NODE_ENV=development parcel src/index.html"
   },
   "keywords": [
@@ -27,8 +29,11 @@
     "@tailwindcss/jit": "^0.1.18",
     "autoprefixer": "^10.2.5",
     "cross-env": "^7.0.3",
+    "eslint": "^7.23.0",
     "npm-run-all": "^4.1.5",
     "parcel": "^2.0.0-beta.2",
+    "parcel-plugin-eslint": "^1.0.8-2",
+    "parcel-plugin-stylelint-all": "^0.2.0",
     "postcss": "^8.2.9",
     "rimraf": "^3.0.2",
     "stylelint": "^13.12.0",
