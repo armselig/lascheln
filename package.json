@@ -22,7 +22,7 @@
     "glücksspiel"
   ],
   "author": "Hendrik Neumann <henne@armselig.net>",
-  "license": "CC0",
+  "license": "CC0-1.0",
   "repository": "github:armselig/lascheln",
   "homepage": "https://github.com/armselig/lascheln/#readme",
   "devDependencies": {
