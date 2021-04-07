@@ -41,9 +41,10 @@ function getWord() {
   const nextPlaceholder = document.getElementById(
     'word' + (activePlaceholder + 1)
   );
-  const die = Math.floor(Math.random() * 6);
+  const die = Math.floor(Math.random() * words[activePlaceholder].length);
   let word = words[activePlaceholder];
 
+  console.log('Die:', die);
   switch (activePlaceholder) {
     case 4:
       placeholder.textContent = word[die].word;
