@@ -60,7 +60,7 @@
         </p>
       </div>
     </header>
-    <main class="container mx-auto my-10 px-2 md:px-8">
+    <main class="container mx-auto mt-10 px-2 md:px-8">
       <noscript
         class="font-bold text-center text-2xl mt-8 p-4 bg-red-700 text-white"
       >
@@ -89,18 +89,17 @@
           <span id="word7" class="word"></span> der
           <span id="word8" class="word"></span>.
         </p>
-        <ul class="mt-8">
-          <li class="inline-block">
-            <button
-              class="btn mb-4 bg-yellow-500 border-yellow-500 hover:border-yellow-600 hover:bg-yellow-400"
-              id="btnDie"
-            >
-              <span>Wort erwürfeln</span><span class="btn__ico">🎲</span>
+        <ul class="mt-10 md:mt-14">
+          <li class="inline-block mb-4">
+            <button class="btn btn--primary animate-spin-once" id="btnDie">
+              <span>Wort erwürfeln</span
+              ><span class="btn__ico" aria-hidden="true">🎲</span>
             </button>
           </li>
           <li class="inline-block">
-            <button class="btn hover:border-yellow-600" id="btnReset">
-              <span>Alles neu</span><span class="btn__ico">🆕</span>
+            <button class="btn" id="btnReset">
+              <span>Alles neu</span
+              ><span class="btn__ico" aria-hidden="true">🆕</span>
             </button>
           </li>
         </ul>
@@ -113,29 +112,33 @@
         </ul>
       </section>
     </main>
-    <footer class="container mx-auto px-2 py-8 md:px-8">
+    <footer class="container mx-auto mt-10 px-2 py-8 md:px-8">
       <ul
         class="footer-links sm:divide-x sm:divide-current text-sm text-center sm:text-left"
       >
-        <li class="sm:inline-block sm:pr-2 mb-2">
-          <a href="https://hendrik.koeln/" title="Webseite von Hendrik Neumann"
-            >🧑‍🚀&nbsp;armselig</a
+        <li class="sm:inline-block sm:pr-2 mb-3">
+          <a
+            class="link"
+            href="https://hendrik.koeln/"
+            title="Webseite von Hendrik Neumann"
+            ><span class="link__ico" aria-hidden="true">👾</span>armselig</a
           >
         </li>
-        <li class="sm:inline-block sm:px-2 mb-2">
+        <li class="sm:inline-block sm:px-2 mb-3">
           <a
+            class="link"
             href="https://github.com/armselig/lascheln"
             title="Quellcode auf GitHub ansehen"
-            >💻 &nbsp;GitHub</a
+            ><span class="link__ico" aria-hidden="true">💻</span>GitHub</a
           >
         </li>
-        <li class="sm:inline-block sm:px-2 mb-2">
+        <li class="sm:inline-block sm:px-2 mb-3">
           <a
+            class="link"
             href="assets/images/wuerfeln-mit-armin.jpg"
             title="Bild, das als Vorlage für diese Seite dient"
-            >🖼️ &nbsp;Vorlage</a
+            ><span class="link__ico" aria-hidden="true">🖼️</span>Vorlage</a
           >
-          (Quelle: Internet)
         </li>
       </ul>
     </footer>
