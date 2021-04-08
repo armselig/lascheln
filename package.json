@@ -9,6 +9,7 @@
     "clean:dist": "rimraf ./dist",
     "lint:code": "eslint --ext js,ts,tsx src",
     "lint:styles": "stylelint ./src/assets/styles/**/*.{css,scss}",
+    "postbuild": "cp -R ./static/. ./dist",
     "prebuild": "npm-run-all --parallel clean:* --serial lint:*",
     "start": "cross-env NODE_ENV=development parcel src/index.html"
   },
