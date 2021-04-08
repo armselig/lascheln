@@ -11,6 +11,7 @@
     "lint:styles": "stylelint ./src/assets/styles/**/*.{css,scss}",
     "postbuild": "cp -R ./static/. ./dist",
     "prebuild": "npm-run-all --parallel clean:* --serial lint:*",
+    "prestart": "run-p clean:*",
     "start": "cross-env NODE_ENV=development parcel src/index.html"
   },
   "keywords": [
