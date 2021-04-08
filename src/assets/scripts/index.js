@@ -41,10 +41,15 @@ function getWord() {
   const nextPlaceholder = document.getElementById(
     'word' + (activePlaceholder + 1)
   );
+  const btnDieIco = document.querySelector('#btnDie .btn__ico');
   const die = Math.floor(Math.random() * words[activePlaceholder].length);
   let word = words[activePlaceholder];
 
   console.log('Die:', die);
+  btnDieIco.classList.add('animate-spin-once');
+  setTimeout(() => {
+    btnDieIco.classList.remove('animate-spin-once');
+  }, 500);
   switch (activePlaceholder) {
     case 4:
       placeholder.textContent = word[die].word;
