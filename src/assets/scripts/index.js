@@ -1,12 +1,12 @@
 'use strict';
 
 let activePlaceholder = 0;
-let phrase;
 const words = require('./words.json');
 const btnDie = document.getElementById('btnDie');
 const btnReset = document.getElementById('btnReset');
 const firstPlaceholder = document.getElementById('word0');
 const sharer = document.getElementById('sharer');
+const twitterLink = document.getElementById('tweet');
 
 function init() {
   firstPlaceholder.classList.add('word--active');
@@ -26,8 +26,20 @@ function reset() {
 
   firstPlaceholder.classList.add('word--active');
   btnDie.disabled = false;
+  sharer.classList.remove('inline-flex');
   sharer.classList.add('hidden');
+  twitterLink.href = '#';
   document.getElementById('word0Prefix').textContent = 'eine';
+}
+
+function buildTweet(phrase) {
+  const url =
+    'https://twitter.com/intent/tweet?url=https://lascheln.armselig.net/&text=';
+  const prefix = '👋🏻 Hej @ArminLaschet! 💡 ';
+  const suffix = ' %23lascheln 👉🏻';
+  const tweet = url + prefix + phrase + suffix;
+
+  twitterLink.href = tweet;
 }
 
 function genderWords() {
@@ -50,6 +62,7 @@ function getWord() {
   setTimeout(() => {
     btnDieIco.classList.remove('animate-spin-once');
   }, 500);
+
   switch (activePlaceholder) {
     case 4:
       placeholder.textContent = word[die].word;
@@ -70,10 +83,15 @@ function getWord() {
     nextPlaceholder.classList.add('word--active');
     activePlaceholder++;
   } else {
-    phrase = document.getElementById('phrase').textContent;
+    const phrase = document
+      .getElementById('phrase')
+      .textContent.replace(/\s+/g, ' ')
+      .trim();
     console.log(phrase);
     btnDie.disabled = true;
-    // sharer.classList.remove('hidden');
+    buildTweet(phrase);
+    sharer.classList.remove('hidden');
+    sharer.classList.add('inline-flex');
   }
 }
 

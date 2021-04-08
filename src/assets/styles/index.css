@@ -3,8 +3,9 @@
 @import 'tailwindcss/components';
 
 .btn {
-  display: flex;
+  display: inline-flex;
   justify-content: space-between;
+  align-items: center;
   min-width: 44px;
   min-height: 44px;
   padding: theme('spacing.2') theme('spacing.4');
