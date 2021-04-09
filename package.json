@@ -1,6 +1,6 @@
 {
   "name": "lascheln",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Pandemieplan nach dem Laschet-Prinzip erwürfeln",
   "private": true,
   "scripts": {
