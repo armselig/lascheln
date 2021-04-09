@@ -6,5 +6,5 @@
 
 ## Inspiration
 
-![Würfeln mit Armin](https://lascheln.armselig.net/assets/images/wuerfeln-mit-armin.jpg)
+![Würfeln mit Armin](https://i.redd.it/xpyba4wxrer61.jpg)
 Quelle: [r/de](https://www.reddit.com/r/de/comments/mkt3a8/w%C3%BCrfeln_mit_armin_erstelle_deinen_eigenen/)
