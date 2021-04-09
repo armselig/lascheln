@@ -7,4 +7,4 @@
 ## Inspiration
 
 ![Würfeln mit Armin](https://lascheln.armselig.net/assets/images/wuerfeln-mit-armin.jpg)
-_Quelle: Internet_
+Quelle: [r/de](https://www.reddit.com/r/de/comments/mkt3a8/w%C3%BCrfeln_mit_armin_erstelle_deinen_eigenen/)
