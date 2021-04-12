@@ -2,6 +2,11 @@
 @import 'tailwindcss/utilities';
 @import 'tailwindcss/components';
 
+::selection {
+  background-color: theme('colors.secondary');
+  color: theme('colors.white');
+}
+
 .btn {
   display: inline-flex;
   justify-content: space-between;
