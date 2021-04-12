@@ -3,8 +3,9 @@
 @import 'tailwindcss/components';
 
 ::selection {
-  background-color: theme('colors.secondary');
+  background-color: theme('colors.tertiary');
   color: theme('colors.white');
+  -webkit-text-fill-color: theme('colors.white');
 }
 
 .btn {
