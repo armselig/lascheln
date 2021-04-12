@@ -37,7 +37,6 @@
       property="twitter:image"
       content="https://lascheln.armselig.net/armin-laschet-dice-1024.jpg"
     />
-    <meta http-equiv="content-language" content="de" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -137,7 +136,7 @@
     </header>
     <main class="container mx-auto mt-10 px-2 md:px-8">
       <noscript
-        class="font-bold text-center text-2xl mt-8 p-4 bg-red-700 text-white"
+        class="font-bold text-center text-2xl mt-8 p-4 bg-secondary text-white"
       >
         Diese Seite funktioniert nur mit aktiviertem JavaScript. ☝️
       </noscript>
@@ -146,6 +145,7 @@
         <p
           id="phrase"
           class="leading-normal md:leading-normal text-3xl sm:text-4xl md:text-6xl"
+          aria-live="polite"
         >
           Was wir jetzt brauchen ist <span id="word0Prefix">eine</span>
           <span
@@ -166,7 +166,7 @@
         </p>
         <ul class="mt-10 md:mt-14">
           <li class="inline-block mb-4">
-            <button class="btn btn--primary" id="btnDie">
+            <button class="btn btn--primary" id="btnDie" aria-controls="phrase">
               <span>Wort erwürfeln</span
               ><span class="btn__ico" aria-hidden="true">🎲</span>
             </button>

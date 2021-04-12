@@ -12,6 +12,7 @@ function init() {
   firstPlaceholder.classList.add('word--active');
   btnDie.disabled = false;
   btnDie.addEventListener('click', getWord, false);
+  btnDie.focus();
   btnReset.addEventListener('click', reset, false);
 }
 
@@ -26,6 +27,7 @@ function reset() {
 
   firstPlaceholder.classList.add('word--active');
   btnDie.disabled = false;
+  btnDie.focus();
   sharer.classList.remove('inline-flex');
   sharer.classList.add('hidden');
   twitterLink.href = '#';
@@ -36,7 +38,7 @@ function buildTweet(phrase) {
   const url =
     'https://twitter.com/intent/tweet?url=https://lascheln.armselig.net/&text=';
   const prefix = '👋🏻 Hej @ArminLaschet! 💡 ';
-  const suffix = ' %23lascheln 👉🏻';
+  const suffix = ' 🤔 %23lascheln 👉🏻';
   const tweet = url + prefix + phrase + suffix;
 
   twitterLink.href = tweet;
@@ -57,7 +59,7 @@ function getWord() {
   const die = Math.floor(Math.random() * words[activePlaceholder].length);
   let word = words[activePlaceholder];
 
-  console.log('Die:', die);
+  // console.log('Die:', die);
   btnDieIco.classList.add('animate-spin-once');
   setTimeout(() => {
     btnDieIco.classList.remove('animate-spin-once');
@@ -76,8 +78,6 @@ function getWord() {
 
   placeholder.classList.remove('word--active');
   placeholder.classList.add('word--solved');
-  // placeholder.style.minWidth = 'unset';
-  // placeholder.style.borderColor = 'transparent';
 
   if (activePlaceholder < words.length - 1) {
     nextPlaceholder.classList.add('word--active');
@@ -87,8 +87,9 @@ function getWord() {
       .getElementById('phrase')
       .textContent.replace(/\s+/g, ' ')
       .trim();
-    console.log(phrase);
+    // console.log(phrase);
     btnDie.disabled = true;
+    btnReset.focus();
     buildTweet(phrase);
     sharer.classList.remove('hidden');
     sharer.classList.add('inline-flex');
